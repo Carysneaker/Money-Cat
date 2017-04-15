@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/topmenu.css">
+	<link rel="stylesheet" href="style/list.css">
+	<link rel="stylesheet" href="style/product.css">
+	<link rel="stylesheet" href="style/mask.css">
+	<script src="js/progressbar.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<div class="top-menu">
+		<a href="javascript:window.history.back()" class="back"></a>
+		<h1>我要投资</h1>
+		<a href="javascript:;" class="sub-menu"></a>
+		<nav style="display: none;">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">安全保障</a></li>
+				<li><a href="">我要投资</a></li>
+				<li><a href="">账户中心</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- 顶部导航 end -->
+
+	<!-- banner start -->
+	<div class="banner">
+		<a href=""><img src="images/list_banner.jpg" alt=""></a>
+	</div>
+	<!-- banner end -->
+
+	<!-- 产品列表start -->
+	<div class="products">
+		<div class="product">
+			<a href="detail.html">
+				<h3>新手专享2128号1期</h3>
+				<ul>
+					<li>12.88%</li>
+					<li>
+						<p><strong>5</strong>天</p>
+						<p>投资期限</p>
+					</li>
+					<li>
+						<div class="progress" id="progress1" data-progress="0.75"></div>
+					</li>
+				</ul>
+			</a>
+		</div>
+		<div class="product">
+			<h3>新手专享2128号1期</h3>
+			<ul>
+				<li>12.88%</li>
+				<li>
+					<p><strong>5</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li>
+					<div class="progress" id="progress2" data-progress="0.68"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="product">
+			<h3>新手专享2128号1期</h3>
+			<ul>
+				<li>12.88%</li>
+				<li>
+					<p><strong>5</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li>
+					<div class="progress" id="progress3" data-progress="0.29"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="product">
+			<h3>新手专享2128号1期</h3>
+			<ul>
+				<li>12.88%</li>
+				<li>
+					<p><strong>5</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li>
+					<div class="progress" id="progress4" data-progress="0.92"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="product">
+			<h3>新手专享2128号1期</h3>
+			<ul>
+				<li>12.88%</li>
+				<li>
+					<p><strong>5</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li>
+					<div class="progress" id="progress5" data-progress="0.38"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="product">
+			<h3>新手专享2128号1期</h3>
+			<ul>
+				<li>12.88%</li>
+				<li>
+					<p><strong>5</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li>
+					<div class="progress" id="progress6" data-progress="0.49"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="product">
+			<h3>新手专享2128号1期</h3>
+			<ul>
+				<li>12.88%</li>
+				<li>
+					<p><strong>5</strong>天</p>
+					<p>投资期限</p>
+				</li>
+				<li>
+					<div class="progress" id="progress7" data-progress="0.18"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 产品列表end -->
+
+	<!-- 底部版权 start -->
+	<footer></footer>
+	<!-- 底部版权 end -->
+
+	<!-- 遮罩层 start -->
+	<div class="mask"></div>
+	<!-- 遮罩层 end -->
+
+	<script>
+
+		/*
+			var options = {
+				color: '#f00',
+			  strokeWidth: 5, //设置环的最大值，
+			  trailWidth: 4, //设置
+			  duration: 800,
+			  text: {
+			    autoStyleContainer: false
+			  },
+			  from: { color: '#f00', width: 5 },
+			  to: { color: '#f00', width: 5 },
+			  // Set default step function for all animate calls
+			  step: function(state, circle) {
+			    circle.path.setAttribute('stroke', state.color);
+			    circle.path.setAttribute('stroke-width', state.width);
+
+			    var value = Math.round(circle.value() * 100);
+			    if (value === 0) {
+			      circle.setText('');
+			    } else {
+			      circle.setText(value + "%");
+			    }
+			  }
+			}
+			//圆环百分比效果
+			var bar = new ProgressBar.Circle("#progress1", options);
+			bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+			bar.text.style.fontSize = '.32rem';
+			bar.animate(0.75);  // Number from 0.0 to 1.0      
+
+			var bar1 = new ProgressBar.Circle("#progress2",options);
+			bar1.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+			bar1.text.style.fontSize = '.32rem';
+			bar1.animate(0.4);  // Number from 0.0 to 1.0   
+		*/
+
+
+		var options = {
+			color: '#f00',
+		  strokeWidth: 5, //设置环的最大值，
+		  trailWidth: 4, //设置
+		  duration: 800,
+		  text: {
+		    autoStyleContainer: false
+		  },
+		  from: { color: '#f00', width: 5 },
+		  to: { color: '#f00', width: 5 },
+		  // Set default step function for all animate calls
+		  step: function(state, circle) {
+		    circle.path.setAttribute('stroke', state.color);
+		    circle.path.setAttribute('stroke-width', state.width);
+
+		    var value = Math.round(circle.value() * 100);
+		    if (value === 0) {
+		      circle.setText('');
+		    } else {
+		      circle.setText(value + "%");
+		    }
+		  }
+		}
+
+		//循环实现/圆环百分比效果
+		$(".products .progress").each(function(index,el){
+			console.log(index,el);
+			var bar = new ProgressBar.Circle(el, options);
+			bar.animate($(el).attr('data-progress'));
+		});
+		/*var bar = new ProgressBar.Circle("#progress1", options);
+		bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+		bar.text.style.fontSize = '.32rem';
+		bar.animate(0.75);  // Number from 0.0 to 1.0      
+
+		var bar1 = new ProgressBar.Circle("#progress2",options);
+		bar1.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+		bar1.text.style.fontSize = '.32rem';
+		bar1.animate(0.4);  // Number from 0.0 to 1.0  */
+
+		//下拉菜单效果
+		$(".sub-menu").click(function(e){
+			//子菜单的切换 
+			$(".top-menu nav").toggle();
+			//遮罩层的切换
+			$(".mask").toggle();
+			e.preventDefault();
+		});
+	</script>
+</body>
+</html>

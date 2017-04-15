@@ -1,0 +1,168 @@
+header {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-pack: justify;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	height: 12.8px;
+	height: .8rem;
+	background: #fa3432;
+	line-height: 12.8px;
+	line-height: .8rem;
+	color: #fff
+}
+header h1 {
+	padding-left: 9.6px;
+	padding-left: .6rem;
+	background: url(../images/logo.png) no-repeat 3.2px 3.2px;
+	background: url(../images/logo.png) no-repeat .2rem .2rem;
+	background-size: .37rem .4rem
+}
+header p {
+	margin-right: 3.2px;
+	margin-right: .2rem
+}
+header p a {
+	margin: 0 1.6px;
+	margin: 0 .1rem
+}
+header a {
+	color: #fff;
+	font-size: 4.16px;
+	font-size: .26rem
+}
+nav {
+	background: #fff
+}
+nav ul {
+	height: 12.8px;
+	height: .8rem;
+	line-height: 12.8px;
+	line-height: .8rem;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around
+}
+nav ul a {
+	color: #4b4a4a;
+	font-size: 3.84px;
+	font-size: .24rem
+}
+nav ul a.on {
+	color: red
+}
+.swiper-container img {
+	width: 100%
+}
+.swiper-pagination-bullet-active {
+	background: #fff !important
+}
+.menu ul {
+	background: #fff;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	border-bottom: 0.16px solid #e2e2e2;
+	border-bottom: .01rem solid #e2e2e2;
+	padding-bottom: 4px;
+	padding-bottom: .25rem;
+	-ms-flex-pack: distribute;
+	justify-content: space-around
+}
+.menu ul li {
+	flow-grow: 1;
+	text-align: center
+}
+.menu ul li a {
+	color: grey;
+	font-size: 3.52px;
+	font-size: .22rem
+}
+.menu ul img {
+	width: 12.16px;
+	width: .76rem;
+	height: 12.16px;
+	height: .76rem;
+	display: block;
+	margin: 3.2px;
+	margin: .2rem
+}
+section {
+	padding: 0 3.2px;
+	padding: 0 .2rem
+}
+section h2 {
+	color: #494848;
+	font-size: 4.48px;
+	font-size: .28rem;
+	font-weight: 400;
+	background: url(../images/home_ico_08.png) no-repeat 0 -0.416px;
+	background: url(../images/home_ico_08.png) no-repeat 0 -.026rem;
+	background-size: .4rem .4rem;
+	padding-left: 7.2px;
+	padding-left: .45rem;
+	margin: 3.2px 0;
+	margin: .2rem 0
+}
+.news h2 {
+	color: #494848;
+	font-size: 4.48px;
+	font-size: .28rem;
+	font-weight: 400;
+	background: url(../images/home_ico_10.png) no-repeat 0 -0.416px;
+	background: url(../images/home_ico_10.png) no-repeat 0 -.026rem;
+	background-size: .4rem .4rem;
+	padding-left: 7.2px;
+	padding-left: .45rem;
+	margin: 3.2px;
+	margin: .2rem
+}
+.news ul {
+	background: #fff;
+	padding: 0.16px 3.2px;
+	padding: .01rem .2rem
+}
+.news ul li {
+	margin: 3.2px 0;
+	margin: .2rem 0
+}
+.news ul a {
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex
+}
+.news ul a img {
+	width: 15.36px;
+	width: .96rem;
+	height: 15.36px;
+	height: .96rem;
+	border-radius: .16rem;
+	margin-right: 3.2px;
+	margin-right: .2rem
+}
+.news ul a div {
+	-ms-flex-positive: 1;
+	-webkit-box-flex: 1;
+	flex-grow: 1
+}
+.news ul a div h3 {
+	line-height: 7.68px;
+	line-height: .48rem;
+	font-size: 4px;
+	font-size: .25rem;
+	color: #494848;
+	font-weight: 400
+}
+.news ul a div p {
+	line-height: 7.68px;
+	line-height: .48rem;
+	font-size: 3.52px;
+	font-size: .22rem;
+	color: #9a9b9c
+}
+.news ul a div p span {
+	float: right
+}

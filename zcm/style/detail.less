@@ -1,0 +1,122 @@
+@import (reference) "base.less";
+html {height: 100%;}
+body {
+	background-color: #fff;
+	height: 100%;
+}
+.income {
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background: -webkit-linear-gradient(top, #ff3c01, #d80607);
+	h2 {
+		font-size: .74rem;
+		text-align: center;
+		color:#fff;
+		font-weight: normal;
+	}
+}
+
+.infos {
+	ul {
+		/* display: -webkit-box; 
+		display: -webkit-flex; 
+		display: flex; */
+		.flex;
+		justify-content:space-around;
+		border-bottom: .01rem solid #f2f2f2;
+		padding: .2rem 0;
+		li {
+			flex-grow:1;
+			text-align: center;
+			color: #7f7f7f;
+			font-size: .28rem;
+
+			&:first-child{
+				border-right: .01rem solid #f2f2f2;
+			}
+		}
+	}
+	.notice {
+		height: 2.03rem;
+		margin: .5rem 0;
+		display: -webkit-box; 
+		display: -webkit-flex; 
+		display: flex;
+		justify-content: space-around;
+		background: url("../images/detail_icon_bg.png") no-repeat center center;
+		background-size: 6.4rem 2.03rem;
+		p {
+			display: flex;
+			flex-direction:column;
+			justify-content: space-around;
+
+			span {
+				color: #ffc166;
+				font-size: .2rem;
+				background:url("../images/detail_icon_01.png") no-repeat 0 center;
+				background-size: 0.48rem 0.48rem;
+				padding:.1rem 0 .1rem .6rem;
+			}
+		}
+	}
+
+	.progress {
+		position: relative;
+		height: 8px;
+		margin: 0 .3rem .3rem;
+
+		.progressbar-text {
+			top: -.45rem !important;
+			left: 0;
+			background: #f00;
+			color: #fff!important;
+			width: 40px;
+			text-align: center;
+			padding: .05rem 0!important;
+			transform:translateX(-50%);
+
+			&::after {
+				position: absolute;
+				content: "";
+				width: 0;
+				height: 0;
+				border:5px solid transparent;
+				border-top: 5px solid #f00;
+				left: 50%;
+				top: 110%;
+				transform:translateX(-50%);
+			}
+		}
+	}
+}
+
+.operate{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	p {
+		background: #f2f2f2;
+		border-top: .01rem solid #eee;
+		display: flex;
+		justify-content:space-between;
+		padding: .2rem;
+		align-items: center;
+		a {
+			text-align: center;			
+		}
+		.income-btn{
+			color: #f90;
+			font-size: .28rem;
+			border-bottom: .01rem solid #f90;
+		}
+		.invest-btn {
+			width:70%;
+			font-size: 0.3rem;
+			background: #f00;
+			color: #fff;
+			border-radius: 5px;
+			line-height: .7rem;
+		}
+	}
+	z-index:999;
+}

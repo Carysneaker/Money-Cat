@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href="style/topmenu.css">
+	<link rel="stylesheet" href="style/detail.css">
+	<link rel="stylesheet" href="style/mask.css">
+	<script src="js/zepto.min.js"></script>
+	<script src="js/progressbar.min.js"></script>
+</head>
+<body>
+	<!-- 顶部导航 start -->
+	<div class="top-menu">
+		<a href="javascript:window.history.back()" class="back"></a>
+		<h1>新手专享1734号2期</h1>
+		<a href="javascript:;" class="sub-menu"></a>
+		<nav style="display: none;">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">安全保障</a></li>
+				<li><a href="">我要投资</a></li>
+				<li><a href="">账户中心</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- 顶部导航 end -->
+	<!-- 收益指数 start -->
+	<div class="income">
+		<h2>12.88%</h2>
+	</div>
+	<!-- 收益指数 end -->
+
+	<!-- 产品基本信息 start-->
+	<div class="infos">
+		<ul>
+			<li>100起投</li>
+			<li>期限5天</li>
+		</ul>		
+		<div class="notice">
+			<p>
+				<span>省级律所法律支持</span>
+				<span>浙大友创战略入股</span>
+			</p>
+			<p>
+				<span>招财猫易贷严风控</span>
+				<span>千万级风险保障金</span>
+			</p>
+		</div>
+		<!-- 百分比进度条 start-->
+		<div class="progress-box">
+			<div class="progress"></div>
+			<p>
+				<span>已投资<strong>20</strong>人</span>
+				<span>剩余可投<strong>660300</strong>元</span>
+			</p>
+		</div>
+		<!-- 百分比进度条 end-->
+	</div>
+	<!-- 产品基本信息 end-->
+
+	<!-- 操作区域start -->
+	<div class="operate">
+		<a href="" class="view-btn">查看项目详情</a>
+		<p>
+			<a href="" class="income-btn">收益估算</a>
+			<a href="" class="invest-btn">立即投资</a>
+		</p>
+	</div>
+	<!-- 操作区域end -->
+
+	<!-- 遮罩层 start -->
+	<div class="mask"></div>
+	<!-- 遮罩层 end -->
+
+	<script>
+		//下拉菜单效果
+		$(".sub-menu").click(function(e){
+			//子菜单的切换 
+			$(".top-menu nav").toggle();
+			//遮罩层的切换
+			$(".mask").toggle();
+			e.preventDefault();
+		});
+
+		//进度条效果
+		var bar = new ProgressBar.Line(".progress", {
+		  strokeWidth: 5,
+		  easing: 'easeInOut',
+		  duration: 1400,
+		  color: '#f00',
+		  trailColor: '#eee',
+		  trailWidth: 5,
+		  svgStyle: {width: '100%', height: '100%', borderRadius:'5px'},
+		  text: {
+		    style: {
+		      color: '#999',
+		      position: 'absolute',
+		      right: '0',
+		      top: '30px',
+		      padding: 0,
+		      margin: 0,
+		      transform: null
+		    },
+		    autoStyleContainer: false
+		  },
+		  from: {color: '#FFEA82'},
+		  to: {color: '#ED6A5A'},
+		 /* step: (state, bar) => {
+		    bar.setText(Math.round(bar.value() * 100) + '%');
+		    bar.text && (bar.text.style.left = Math.round(bar.value() * 100) + '%'); 
+		  }*/
+
+		  step : function(state, bar){
+		  	bar.setText(Math.round(bar.value() * 100) + '%');
+		    bar.text && (bar.text.style.left = Math.round(bar.value() * 100) + '%');
+		  }
+		});
+		bar.animate(0.75);  // Number from 0.0 to 1.0
+	</script>
+</body>
+</html>
